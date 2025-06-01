@@ -105,7 +105,7 @@ export const Services = () => {
 
       <motion.div
         ref={ref}
-        className="services-container grid grid-cols-1 sm:grid-cols-2 place-items-center shadow-2xl gap-3"
+        className="services-container grid grid-cols-1 sm:grid-cols-2 place-items-center  gap-3"
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
@@ -113,7 +113,7 @@ export const Services = () => {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="bg-white flex flex-col box rounded-lg p-6 w-full sm:w-1/2 md:w-1/3 text-center"
+            className="bg-white flex shadow-2xl flex-col box rounded-lg p-6 w-full sm:w-1/2 md:w-1/3 text-center"
             variants={cardVariants}
           >
             <div className="icon mb-4 text-purple-700 text-4xl">
