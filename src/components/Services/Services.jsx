@@ -1,6 +1,4 @@
-import React from "react";
 import "./services.css";
-import { motion } from "framer-motion";
 import {
   FaLaptopCode,
   FaShoppingCart,
@@ -10,7 +8,6 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 
-import { useInView } from "react-intersection-observer";
 import { PiMicrosoftExcelLogoBold } from "react-icons/pi";
 import { PiMicrosoftWordLogoBold } from "react-icons/pi";
 import { PiMicrosoftPowerpointLogo } from "react-icons/pi";
@@ -73,45 +70,19 @@ const services = [
 ];
 
 export const Services = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.3,
-  });
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3, // delay between each card's animation
-      },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
-
+ 
   return (
     <section id="services" className="mt-[30%] md:mt-[10%]">
       <h1 className="text-4xl text-purple-600 font-extrabold text-center mb-[10%] md:mb-[5%]">
         Our Services
       </h1>
 
-      <motion.div
-        ref={ref}
+      <div
         className="services-container grid grid-cols-1 sm:grid-cols-2 place-items-center  gap-3"
-        variants={containerVariants}
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
+        
       >
         {services.map((service, index) => (
-          <motion.div
+          <div
             key={index}
             className="bg-white flex shadow-2xl flex-col box rounded-lg p-6 w-full sm:w-1/2 md:w-1/3 text-center"
             variants={cardVariants}
@@ -123,9 +94,9 @@ export const Services = () => {
               {service.title}
             </h3>
             <p className="text-gray-500 text-sm">{service.description}</p>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 };
