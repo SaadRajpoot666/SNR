@@ -85,7 +85,7 @@ export const Services = () => {
           <div
             key={index}
             className="bg-white flex shadow-2xl flex-col box rounded-lg p-6 w-full sm:w-1/2 md:w-1/3 text-center"
-            variants={cardVariants}
+ 
           >
             <div className="icon mb-4 text-purple-700 text-4xl">
               {service.icon}
