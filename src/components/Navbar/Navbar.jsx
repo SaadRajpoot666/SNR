@@ -15,7 +15,7 @@ export const Navbar = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="navbars-container">
+      <div className="navbars-container fixed top-0 left-0 w-full z-50">
         {/* {Laptop Navbar} */}
 
         <div className="laptop-nav hidden md:block">
@@ -27,7 +27,7 @@ export const Navbar = () => {
                   className="hover:text-purple-900 duration-150 cursor-pointer "
                 >
                   {" "}
-                  <Link to={item.toLowerCase()}>{item}</Link>{" "}
+                  <Link smooth={true} to={item.toLowerCase()}>{item}</Link>{" "}
                 </li>
               ))}
             </ul>
@@ -36,7 +36,7 @@ export const Navbar = () => {
         </div>
 
         {/* mobile navbar */}
-        <div className="mobile-nav block md:hidden">
+        <div className="mobile-nav block md:hidden bg-white">
           <nav className="py-4 px-4 relative">
             <div
               className="hamburger-container text-purple-700 mb-7 text-3xl"
@@ -53,7 +53,7 @@ export const Navbar = () => {
                   className="hover:text-purple-900 duration-150 cursor-pointer "
                   >
                   {" "}
-                  <Link to={item.toLowerCase()}>{item}</Link>{" "}
+                  <Link smooth={true} to={item.toLowerCase()}>{item}</Link>{" "}
                 </li>
               ))}
             </ul>
