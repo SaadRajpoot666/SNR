@@ -31,7 +31,7 @@ export const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className=" absoulte h-[2px] bg-gradient-to-r from-white  via-purple-800 to-white bottom-0 left-0 w-full "></div>
+            <div className=" absoulte h-[4px] bg-gradient-to-r from-white  via-purple-800 to-white bottom-0 left-0 w-full "></div>
           </nav>
         </div>
 
