@@ -1,0 +1,57 @@
+.card-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 70vw;
+    max-width: 400px;
+    max-height: 500px;
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+ 
+
+ 
+.card-box::before,
+.card-box::after {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: 10px;
+    z-index: -1;
+    background: conic-gradient( from var(--angle),
+        transparent 0deg,
+        #7c3aed 20deg,
+        transparent 40deg,
+        transparent 160deg,
+        #7c3aed 180deg,
+        transparent 200deg,
+        transparent 360deg);
+    animation: glowing-border 3.5s linear infinite;
+}
+
+.card-box::after {
+    z-index: -2;
+    filter: blur(10px);
+    animation: glowing-border 3.5s linear infinite ;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 53deg;
+    inherits: false;
+}
+
+@keyframes glowing-border {
+    from {
+        --angle: 53deg;
+    }
+    to {
+        --angle: 413deg;
+    }
+}
+
+ 
