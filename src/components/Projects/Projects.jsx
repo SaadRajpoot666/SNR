@@ -1,5 +1,4 @@
-import kstraders from "../../assets/images/kstraders.png"
-import SaadDev from "../../assets/images/Saad.Dev.png"
+import SaadDev from "../../assets/images/saaddev.png"
 import MRS from "../../assets/images/mrsenterprise.png"
 import budgetTracker from "../../assets/images/budgetTracker.png"
 import form from "../../assets/images/access.png"
@@ -7,7 +6,6 @@ import "./Projects.css"
 export const Projects = ()=>{
 
 const cardsItems = [
-    {id: 75349, name:"KS TRADERS", category:"Web Developement",img:kstraders},
     {id: 75349, name:"Saad.Dev", category:"Web Developement",img:SaadDev},
     {id: 75349, name:"MRS ENTERPISES", category:"Web Developement",img:MRS},
     {id: 75349, name:"BUDGET TRACKER", category:"MS Excel",img:budgetTracker},
