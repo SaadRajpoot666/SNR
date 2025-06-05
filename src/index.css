@@ -1,1 +1,22 @@
 @import "tailwindcss";
+/* Entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* For vertical scrollbar */
+  height: 10px; /* For horizontal scrollbar */
+}
+
+/* Track (the background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#41168b ;
+}

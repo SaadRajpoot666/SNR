@@ -7,7 +7,7 @@ import { HiX } from "react-icons/hi";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["HOME", "ABOUT", "SERVICES","Projects", "CONTACT"];
+  const navItems = ["HOME", "ABOUT", "SERVICES","PROJECTS", "CONTACT"];
 
   return (
     <motion.div
