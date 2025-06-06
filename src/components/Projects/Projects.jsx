@@ -6,7 +6,7 @@ import form from "../../assets/images/access.png"
 import "./Projects.css"
 export const Projects = ()=>{
 
-const cardsItems = [
+const cardItems = [
     {id: 75349, name:"KS TRADERS", category:"Web Developement",img:kstraders},
 
     {id: 75339, name:"Saad.Dev", category:"Web Developement",img:saaddev},
@@ -21,7 +21,7 @@ return <section id="projects" className=" ">
         className="services-container grid grid-cols-1 sm:grid-cols-2 place-items-center  gap-3"
         
       >
-        {cardsItems.map((item, index) => (
+        {cardItems.map((item, index) => (
           <div
             key={index}
             className="bg-white flex shadow-2xl flex-col card-box rounded-lg p-6 w-full sm:w-1/2 md:w-1/3 text-center "
