@@ -17,7 +17,7 @@ const cardItems = [
 ]
 
 return <section id="projects" className=" ">
-    <h1 className="text-4xl hover:scale-110 duration-150 transition-all cursor-pointer text-purple-600 font-extrabold text-center mb-[10%] mt-[10%] md:mt-[10%] md:mb-[15%]">Projects</h1>
+    <h1 className="text-4xl hover:scale-110 duration-150 transition-all cursor-pointer text-purple-600 font-extrabold text-center mb-[15%] mt-[5%] md:mt-[15%] md:mb-[10%]">Projects</h1>
     <div
         className="services-container grid grid-cols-1 sm:grid-cols-2 place-items-center  gap-3"
         
