@@ -1,8 +1,9 @@
-import saaddev from "../../assets/images/saaddev.png"
-import kstraders from "../../assets/images/kstraders.png"
-import mrs from "../../assets/images/mrsenterprise.png"
-import budgettracker from "../../assets/images/budgetTracker.png"
-import form from "../../assets/images/access.png"
+import saaddev from "../../assets/images/saaddev.PNG"
+import kstraders from "../../assets/images/kstraders.PNG"
+import mrs from "../../assets/images/mrsenterprise.PNG"
+import budgettracker from "../../assets/images/budgetTracker.PNG"
+import form from "../../assets/images/access.PNG"
+
 import "./Projects.css"
 export const Projects = ()=>{
 
