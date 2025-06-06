@@ -1,17 +1,18 @@
+import saaddev from "../../assets/images/saaddev.png"
 import kstraders from "../../assets/images/kstraders.png"
-import SaadDev from "../../assets/images/Saad.Dev.png"
-import MRS from "../../assets/images/mrsenterprise.png"
-import budgetTracker from "../../assets/images/budgetTracker.png"
+import mrs from "../../assets/images/mrsenterprise.png"
+import budgettracker from "../../assets/images/budgetTracker.png"
 import form from "../../assets/images/access.png"
 import "./Projects.css"
 export const Projects = ()=>{
 
-const cardsItems = [
+const cardItems = [
     {id: 75349, name:"KS TRADERS", category:"Web Developement",img:kstraders},
-    {id: 75349, name:"Saad.Dev", category:"Web Developement",img:SaadDev},
-    {id: 75349, name:"MRS ENTERPISES", category:"Web Developement",img:MRS},
-    {id: 75349, name:"BUDGET TRACKER", category:"MS Excel",img:budgetTracker},
-    {id: 75349, name:"Form", category:"MS Access",img:form}
+
+    {id: 75339, name:"Saad.Dev", category:"Web Developement",img:saaddev},
+    {id: 75389, name:"MRS ENTERPISES", category:"Web Developement",img:mrs},
+    {id: 75379, name:"BUDGET TRACKER", category:"MS Excel",img:budgettracker},
+    {id: 75399, name:"Form", category:"MS Access",img:form}
 ]
 
 return <section id="projects" className=" ">
@@ -20,7 +21,7 @@ return <section id="projects" className=" ">
         className="services-container grid grid-cols-1 sm:grid-cols-2 place-items-center  gap-3"
         
       >
-        {cardsItems.map((item, index) => (
+        {cardItems.map((item, index) => (
           <div
             key={index}
             className="bg-white flex shadow-2xl flex-col card-box rounded-lg p-6 w-full sm:w-1/2 md:w-1/3 text-center "
